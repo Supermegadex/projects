@@ -7,11 +7,19 @@ const styles = theme => ({
   title: {
     color: 'white',
   },
+  button: {
+    "&:hover $wrapper": {
+      backgroundColor: theme.palette.primary["A200"],
+      opacity: 1,
+    }
+  },
   wrapper: {
     width: '50%',
     padding: 50,
-    backgroundColor: theme.palette.primary["A200"],
     opacity: .85,
+    transition: '250ms ease-in-out',
+    backgroundColor: theme.palette.primary["A100"],
+    border: "5px solid " + theme.palette.primary["A200"]
   },
   class: {
     color: 'white'
@@ -27,7 +35,7 @@ class Project extends Component {
   render() {
     const classes = this.props.classes;
     return (
-      <ButtonBase style={{ backgroundImage: `url(${this.props.img})`, backgroundSize: 'cover' }} focusRipple onClick={this.go}>
+      <ButtonBase style={{ backgroundImage: `url(${this.props.img})`, backgroundSize: 'cover' }} className={classes.button} focusRipple onClick={this.go}>
         <div className={classes.wrapper}>
           <Typography className={classes.title} type="title">{this.props.title}</Typography>
           <Typography type="heading" className={classes.class}>{this.props.course}</Typography>
