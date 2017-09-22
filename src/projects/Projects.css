@@ -2,5 +2,23 @@
   display: grid;
   grid-template-columns: 33.33vw 33.33vw 33.33vw;
   height: 100vh;
-  grid-template-rows: 22vw 22vw;
+  grid-auto-rows: 22vw 22vw;
+}
+
+@media (max-width: 955px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    height: 100vh;
+    grid-auto-rows: 33.33vw 33.33vw;
+  }
+}
+
+@media (max-width: 660px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 100vw;
+    height: 100vh;
+    grid-auto-rows: 66.33vw;
+  }
 }

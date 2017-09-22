@@ -38,7 +38,7 @@ class Project extends Component {
       <ButtonBase style={{ backgroundImage: `url(${this.props.img})`, backgroundSize: 'cover' }} className={classes.button} focusRipple onClick={this.go}>
         <div className={classes.wrapper}>
           <Typography className={classes.title} type="title">{this.props.title}</Typography>
-          <Typography type="heading" className={classes.class}>{this.props.course}</Typography>
+          <Typography type="subheading" className={classes.class}>{this.props.course}</Typography>
         </div>  
       </ButtonBase>
     )

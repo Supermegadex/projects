@@ -5,9 +5,16 @@ import ella from '../img/ellaminnow.ga.png';
 import roanoke from '../img/roanoke-info.cf.png';
 import reactor from '../img/wfreactor.tk.png';
 import bluejay from '../img/bluejay.danielsprojects.ml.png';
+import nnpresentation from '../img/nnpresentation.danielsprojects.ml.png';
 
 class Projects extends Component {
   projects = [
+    {
+      title: "Net Neutrality",
+      img: nnpresentation,
+      url: "https://nnpresentation.danielsprojects.ml",
+      course: "AP Comp Sci Principles"
+    },
     {
       title: "Roanoke Infographic",
       img: roanoke,
