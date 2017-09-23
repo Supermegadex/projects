@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './projects/Projects';
 import Header from './header/Header';
+import Footer from './footer/Footer';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
       <div className={classes.root}>
         <Header></Header>
         <Projects className="section" id="projects" />
+        <Footer></Footer>
       </div>
     );
   }

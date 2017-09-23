@@ -6,6 +6,7 @@ const theme = createMuiTheme({
   palette: {
     primary: indigo,
     secondary: amber,
+    type: 'dark'
   },
 });
 
