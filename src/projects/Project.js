@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography, ButtonBase } from 'material-ui';
+import { Typography, ButtonBase, Icon } from 'material-ui';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 
@@ -9,8 +9,15 @@ const styles = theme => ({
   },
   button: {
     "&:hover $wrapper": {
-      backgroundColor: theme.palette.primary["A200"],
+      backgroundColor: theme.palette.secondary["A200"],
+      border: "5px solid " + theme.palette.secondary["A200"],
       opacity: 1,
+    },
+    "&:hover $title": {
+      color: 'black'
+    },
+    "&:hover $class": {
+      color: 'black'
     }
   },
   wrapper: {
@@ -37,7 +44,10 @@ class Project extends Component {
     return (
       <ButtonBase style={{ backgroundImage: `url(${this.props.img})`, backgroundSize: 'cover' }} className={classes.button} focusRipple onClick={this.go}>
         <div className={classes.wrapper}>
-          <Typography className={classes.title} type="title">{this.props.title}</Typography>
+          <Icon className={classes.class}>&#xE89E;</Icon>
+          <Typography className={classes.title} type="title">
+            {this.props.title}
+          </Typography>
           <Typography type="subheading" className={classes.class}>{this.props.course}</Typography>
         </div>  
       </ButtonBase>
