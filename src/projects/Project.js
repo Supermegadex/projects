@@ -9,7 +9,7 @@ const styles = theme => ({
   },
   button: {
     "&:hover $wrapper": {
-      backgroundColor: theme.palette.secondary["A200"],
+      backgroundColor: theme.palette.secondary["A100"],
       border: "5px solid " + theme.palette.secondary["A200"],
       opacity: 1,
     },
